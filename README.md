@@ -2,7 +2,7 @@
 
 This is a very rudimentary, wireframe 3d engine.
 
-![alt text](https://github.com/DiogoDeAndrade/py3d/raw/master/Screenshots/title.png "Sample application")
+![alt text](https://github.com/DiogoDeAndrade/py3d/raw/master/screenshots/title.png "Sample application")
 
 This serves as a basis for the "Introduction to Math and Physics for Videogames I" course, on the [Licenciatura em Videojogos][lv] da
 [Universidade Lusófona de Humanidades e Tecnologias][ULHT] in Lisbon.
@@ -50,13 +50,15 @@ The assignment for the course is as follows:
 * Git commit history will be analyzed to see individual work of students in the overall project
 * Project has to be delivered up 20th January 2020 (midnight), and link delivered on the course's Moodle page
   - Deliverables have to include a link to the Github repo
-  - Project has to include a `report.md` file with a small report on the work done on the project, and the individual contributions of the group
+  - Project has to include a `report.md` file with a small report on the work done on the project, and the individual contributions of the group.
+  - Report should also include (besides the names and numbers of students), their Github account username.
   - Extra credit on reports that include a short postmortem, where students explain what went right with the project and what went wrong
 * Grade will consider the following:
   - How much was achieved from the overal goals
     - Viewer application is considered the minimum viable delivery
   - Functionality and lack of bugs
   - Overall quality of code, including documentation
+  - GIT usage throughout the project, as well as individual contributions of students
 
 ## Installation of required modules
 
