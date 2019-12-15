@@ -1,8 +1,8 @@
-# Py3d
+# Introdução à Matemática e Física Para Videojogos I - Projecto Final
 
 This is a very rudimentary, wireframe 3d engine.
 
-![alt text](https://github.com/VideojogosLusofona/py3d/raw/master/screenshots/title.png "Sample application")
+![alt text](https://github.com/VideojogosLusofona/imfj_2019_projecto/raw/master/screenshots/title.png "Sample application")
 
 This serves as a basis for the "Introduction to Math and Physics for Videogames I" course, on the [Licenciatura em Videojogos][lv] da
 [Universidade Lusófona de Humanidades e Tecnologias][ULHT] in Lisbon.
@@ -82,14 +82,14 @@ If pip is not available on the command line, you can try to invoke it through th
 We recomend building a fork of this project, and doing additional work on your repository. 
 
 * Create a copy (fork) of this repository (normally called _upstream_) in your Github account (**Fork** button in the upper right corner). The copy of the repository is usually called _origin_
-* Get a local copy (on your PC) of the _origin_ repository, with the comand `git clone https://github.com/<your_username>/py3d.git` (replace `<your username>` by your username in Github)
-* Link the local repository with the remote _upstream_ repository with the command: `git remote add upstream https://VideojogosLusofona/py3d.git`
+* Get a local copy (on your PC) of the _origin_ repository, with the comand `git clone https://github.com/<your_username>/imfj_2019_projecto.git` (replace `<your username>` by your username in Github)
+* Link the local repository with the remote _upstream_ repository with the command: `git remote add upstream https://VideojogosLusofona/imfj_2019_projecto.git`
 
-Periodically, update your repository with changes done on the source py3d repo (in case bug fixes are introduced):
+Periodically, update your repository with changes done on the source `imfj_2019_projecto` repo (in case bug fixes are introduced):
 
 * Make sure you're working on the _master_ branch:
   - `git checkout master`
-* Download any updates on the py3d source repository by merging them with your _master_ branch:
+* Download any updates on the imfj_2019_projecto source repository by merging them with your _master_ branch:
   - `git fetch upstream`
   - `git merge upstream/master`
 * Upload (_push_) the changes on _upstream_ to the _origin_ repository:
