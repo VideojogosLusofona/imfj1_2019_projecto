@@ -2,7 +2,7 @@
 
 This is a very rudimentary, wireframe 3d engine.
 
-![alt text](https://github.com/DiogoDeAndrade/py3d/raw/master/screenshots/title.png "Sample application")
+![alt text](https://github.com/VideojogosLusofona/py3d/raw/master/screenshots/title.png "Sample application")
 
 This serves as a basis for the "Introduction to Math and Physics for Videogames I" course, on the [Licenciatura em Videojogos][lv] da
 [Universidade Lusófona de Humanidades e Tecnologias][ULHT] in Lisbon.
