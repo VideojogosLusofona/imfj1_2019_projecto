@@ -50,8 +50,10 @@ The assignment for the course is as follows:
 * Git commit history will be analyzed to see individual work of students in the overall project
 * Project has to be delivered up 20th January 2020 (midnight), and link delivered on the course's Moodle page
   - Deliverables have to include a link to the Github repo
-  - Project has to include a `report.md` file with a small report on the work done on the project, and the individual contributions of the group.
+    - If you want to use a private repository, instead of a public one, you can deliver all the files in a .zip file, __**INCLUDING**__ the .git directory for git usage analysis 
+  - Project has to include a report, in a `readme.md` file. This report has to include the work done on the project, and the individual contributions of the group.
   - Report should also include (besides the names and numbers of students), their Github account username.
+  - Report has to be formated in Markdown, as taught on the November workshop.
   - Extra credit on reports that include a short postmortem, where students explain what went right with the project and what went wrong
 * Grade will consider the following:
   - How much was achieved from the overal goals
