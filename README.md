@@ -79,6 +79,12 @@ If pip is not available on the command line, you can try to invoke it through th
 
 * `python -m pip install <name of package>`
 
+There might be some issues with installing numpy and numpy-quaternion, due to a C compiler not being available in the path.
+If that happens, you can try download a binary version of the library (called a wheel) and install it manually.
+You can download the wheels for Numpy from `https://pypi.org/project/numpy/#files`. Choose the appropriate version for your OS and Python version (cp36 for Python 3.6, cp37 for Python 3.7, etc). For example, 64-bit Windows 10 for Python 3.6 is the file `numpy-1.17.4-cp35-cp35m-win_amd64.whl`.
+For numpy-quaternion, you can get the files from `https://www.lfd.uci.edu/~gohlke/pythonlibs/`. Same naming scheme is used, so the file for 64-bit Windows 10 for Python 3.6 is the file `numpy_quaternion‑2019.12.12‑cp36‑cp36m‑win_amd64.whl`.
+To install a wheel manually, you just have to run the command: `pip install <wheel name>` or `python -m pip install <wheel name>` from the directory where the wheel was downloaded to.
+
 ## Work on the project
 
 We recomend building a fork of this project, and doing additional work on your repository. 
