@@ -73,6 +73,9 @@ class vector3:
     def magnitude(self):
         return math.sqrt(self.dot(self))
 
+    def magnitude_squared(self):
+        return self.dot(self)
+
     def dot(self, v):
         if (isinstance(v, vector3)):
             return self.x * v.x + self.y * v.y + self.z * v.z
@@ -81,7 +84,7 @@ class vector3:
 
     def cross(self, v):
         if (isinstance(v, vector3)):
-            return vector3(self.y * v.z - self.z * v.y, self.z * v.y - self.x * v.z, self.x * v.y - self.y * b.x)
+            return vector3(self.y * v.z - self.z * v.y, self.z * v.x - self.x * v.z, self.x * v.y - self.y * v.x)
         else:
             raise(InvalidOperationException("dot", type(self), type(v)))
 
