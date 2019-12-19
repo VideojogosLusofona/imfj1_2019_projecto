@@ -6,7 +6,7 @@ class Object3d:
     def __init__(self, name):
         self.name = name
         self.position = vector3()
-        self.rotation = quaternion(0,0,0,1)
+        self.rotation = quaternion(1,0,0,0)
         self.scale = vector3(1,1,1)
         self.mesh = None
         self.material = None
