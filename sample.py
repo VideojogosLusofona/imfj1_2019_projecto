@@ -49,12 +49,14 @@ def main():
     # every second
     angle = 15
     axis = vector3(1,0.7,0.2)
-    axis = vector3(0,1,0)
     axis.normalize()
 
     # Timer
     delta_time = 0
     prev_time = time.time()
+
+    pygame.mouse.set_visible(False)
+    pygame.event.set_grab(True)
 
     # Game loop, runs forever
     while (True):

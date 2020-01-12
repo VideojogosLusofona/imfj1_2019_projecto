@@ -34,6 +34,8 @@ class color:
     def __mul__(self, v):
         if (isinstance(v, (int, float))):
             return color(self.r * v, self.g * v, self.b * v, self.a * v)
+        elif (isinstance(v, color)):
+            return color(self.r * v.r, self.g * v.g, self.b * v.b, self.a * v.a)
         else:
             raise(InvalidColorOperationException("mult", type(self), type(v)))
 
@@ -96,3 +98,10 @@ class color:
     def tuple4(self):
         return (self.r * 255, self.g * 255, self.b * 255, self.a * 255)
 
+    def saturate(self):
+        return color(
+                min(max(self.r, 0), 1),
+                min(max(self.g, 0), 1),
+                min(max(self.b, 0), 1),
+                min(max(self.a, 0), 1)
+        )

@@ -98,11 +98,18 @@ class vector3:
         d = 1.0 / self.magnitude()
         return vector3(self.x * d, self.y * d, self.z * d)
 
+    def x0z(self):
+        return vector3(self.x, 0, self.z)
+
     def to_np3(self):
         return np.array([self.x, self.y, self.z])
 
     def to_np4(self, w = 1):
         return np.array([self.x, self.y, self.z, w])
+
+    @staticmethod
+    def from_np(np_array):
+        return vector3(np_array[0], np_array[1], np_array[2])
 
 def dot_product(v1, v2):
     return v1.dot(v2)

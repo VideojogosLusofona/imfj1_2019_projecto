@@ -29,6 +29,18 @@ class Object3d:
     def add_child(self, obj):
         self.children.append(obj)
 
+    def get_position(self):
+        return vector3.from_np(vector3(0,0,0).to_np4(1) @ self.get_matrix())
+
+    def forward(self):
+        return vector3.from_np(vector3(0,0,1).to_np4(0) @ self.get_matrix())
+
+    def up(self):
+        return vector3.from_np(vector3(0,1,0).to_np4(0) @ self.get_matrix())
+
+    def right(self):
+        return vector3.from_np(vector3(1,0,0).to_np4(0) @ self.get_matrix())
+
     @staticmethod
     def get_prs_matrix(position, rotation, scale):
         trans = np.identity(4)

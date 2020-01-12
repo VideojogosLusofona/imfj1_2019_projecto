@@ -30,4 +30,22 @@ class Camera(Object3d):
         return self.proj_matrix
 
     def get_camera_matrix(self):
-        return Object3d.get_prs_matrix(-self.position, self.rotation.inverse(), vector3(1,1,1))
+        trans = np.identity(4)
+        trans[3,0] = -self.position.x
+        trans[3,1] = -self.position.y
+        trans[3,2] = -self.position.z    
+
+        qrot  = as_rotation_matrix(self.rotation.inverse())
+        rotation_matrix = np.identity(4)
+        rotation_matrix[0][0] = qrot[0][0]
+        rotation_matrix[0][1] = qrot[0][1]
+        rotation_matrix[0][2] = qrot[0][2]
+        rotation_matrix[1][0] = qrot[1][0]
+        rotation_matrix[1][1] = qrot[1][1]
+        rotation_matrix[1][2] = qrot[1][2]
+        rotation_matrix[2][0] = qrot[2][0]
+        rotation_matrix[2][1] = qrot[2][1]
+        rotation_matrix[2][2] = qrot[2][2]
+        rotation_matrix[3,3] = 1
+
+        return trans @ rotation_matrix
